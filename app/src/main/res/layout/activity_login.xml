@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_margin="50dp"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:textColor="@color/pink"
+            android:hint="Username"
+            android:background="@color/white"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textColor="@color/black"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@color/white"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:textColor="@color/black"
+            android:text="Forgot Password"
+            android:gravity="right"/>
+
+        <Button
+            android:id="@+id/signin"
+            android:text="Sign In"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_width="300dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:onClick="signin"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/signup"
+            android:text="Create an Account"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:onClick="create"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
